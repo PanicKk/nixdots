@@ -70,6 +70,9 @@
     xserver = {
       enable = true;
       videoDrivers = [ "nvidia" ];
+      layout = "us";
+      xkbVariant = "";
+      dpi = 127;
       displayManager = {
         gdm.enable = true;
         gdm.wayland = false;
@@ -97,14 +100,6 @@
     blueman.enable = true;
 
     upower.enable = true;
-  };
-
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-    dpi = 127;
   };
 
   # Enable CUPS to print documents.
