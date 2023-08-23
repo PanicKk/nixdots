@@ -1,4 +1,4 @@
-{ config, system, pkgs, nixpkgs, home-manager, inputs, ... }:
+{ system, pkgs, nixpkgs, home-manager, inputs, ... }:
 
 nixpkgs.lib.nixosSystem rec {
   inherit system;
@@ -14,7 +14,7 @@ nixpkgs.lib.nixosSystem rec {
         };
       };
     }
-    (import ../shared { inherit config hostname home-manager inputs pkgs; })
+    (import ../shared { inherit hostname home-manager inputs pkgs; })
     (import ./configuration.nix { inherit pkgs inputs; })
     (import ./docker.nix { inherit pkgs; })
   ];

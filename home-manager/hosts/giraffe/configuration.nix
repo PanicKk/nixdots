@@ -27,6 +27,6 @@
     dotnet-aspnetcore_7
     dotnet-aspnetcore 
     jre8
-    jetbrains.rider
+    #jetbrains.rider
   ];
 }
