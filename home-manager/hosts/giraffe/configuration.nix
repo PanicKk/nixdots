@@ -1,6 +1,8 @@
 { pkgs, inputs, ... }:
 
 {
+  nixpkgs.config.allowUnfree = true;
+
   environment.systemPackages = with pkgs; [
     libinput
     libglibutil
@@ -27,6 +29,6 @@
     dotnet-aspnetcore_7
     dotnet-aspnetcore 
     jre8
-    #jetbrains.rider
+    jetbrains.rider
   ];
 }
