@@ -1,4 +1,6 @@
-{lib, ...}: {
+{ lib, ... }: 
+
+{
   boot = {
     supportedFilesystems = ["ntfs"];
     loader = {
@@ -34,10 +36,8 @@
     };
   };
 
-  # Set your time zone.
   time.timeZone = "Europe/Skopje";
 
-  # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.extraLocaleSettings = {
@@ -51,7 +51,7 @@
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
-  # Enable the X11 windowing system.
+
   services = {
     touchegg.enable = true;
     xserver = {
@@ -59,22 +59,6 @@
       layout = "us";
       xkbVariant = "";
       dpi = 127;
-      displayManager = {
-        gdm.enable = true;
-        gdm.wayland = false;
-        defaultSession = "gnome";
-      };
-      desktopManager.gnome.enable = true;
-      libinput = {
-        enable = true;
-        touchpad = {
-          tapping = true;
-          horizontalScrolling = true;
-          naturalScrolling = false;
-          disableWhileTyping = true;
-          middleEmulation = true;
-        };
-      };
     };
 
     devmon.enable = true;
@@ -85,10 +69,8 @@
     upower.enable = true;
   };
 
-  # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # Enable sound with pipewire.
   sound.enable = lib.mkForce false;
 
   hardware.pulseaudio.enable = lib.mkForce false;

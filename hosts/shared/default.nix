@@ -1,3 +1,6 @@
 {
-  imports = [./shell.nix ./misc.nix];
+  imports = [
+    ./shell.nix
+    ./misc.nix
+  ];
 }

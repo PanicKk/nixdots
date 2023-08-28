@@ -9,8 +9,12 @@
   };
 
   outputs = inputs @ {nixpkgs, ...}: {
-    nixosConfigurations.giraffe = nixpkgs.lib.nixosSystem {
-      modules = [./hosts/giraffe ./hosts/shared];
+    nixosConfigurations.gjirafa = nixpkgs.lib.nixosSystem {
+      modules = [./hosts/gjirafa ./hosts/shared];
+      specialArgs = {inherit inputs;};
+    };
+    nixosConfigurations.pancake = nixpkgs.lib.nixosSystem {
+      modules = [./hosts/pancake ./hosts/shared];
       specialArgs = {inherit inputs;};
     };
   };
