@@ -35,12 +35,12 @@
       shadow-ignore-shaped = false;
       # Window Opactiy
       inactive-opacity = 0.8;
-      active-opactiy = 1;
+      active-opacity = 1;
       frame-opacity = 1;
       inactive-opacity-override = false;
       # Blur
       blur-background = true;
-      blur-method = "dual-kawase";
+      blur-method = "dual_kawase";
       blur-kern = "5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1";
       blur-deviation = true;
       blur-strength = 7;
@@ -51,7 +51,6 @@
       use-ewmh-active-win = true;
       detect-rounded-corners=true;
       detect-client-opactity=true;
-      refresh-rate = 0;
       dbe = false;
       unredir-if-possible = true;
       detect-transient = true;

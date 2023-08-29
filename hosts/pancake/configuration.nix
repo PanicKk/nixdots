@@ -75,7 +75,7 @@
      xfce.thunar
      sxhkd
      alacritty
-     picom-jonaburg
+     picom
      eww
      wmutils-core
      wmutils-opt
