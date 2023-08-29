@@ -9,5 +9,6 @@
     ranger
     feh
     firefox
+    cmake
   ];
 }

@@ -60,7 +60,8 @@
 
   environment.systemPackages = with pkgs; 
     let 
-      dotfiles = pkgs.callPackage ../../derivations/dotfiles.nix {inherit pkgs;}; 
+      dotfiles = pkgs.callPackage ../../derivations/dotfiles.nix {inherit pkgs;};
+      wmutils = pkgs.callPackage ../../derivations/wmutils.nix {inherit pkgs;};
     in [
      gcc
      ripgrep
@@ -77,8 +78,9 @@
      alacritty
      picom
      eww
+     xorg.libxcb.dev
      wmutils-core
-     wmutils-opt
+     wmutils
      wmutils-libwm
      ueberzug
      rofi
