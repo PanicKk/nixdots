@@ -10,5 +10,8 @@
     feh
     firefox
     cmake
+    lxappearance
+    gradience
+    adw-gtk3
   ];
 }

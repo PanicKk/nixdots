@@ -62,6 +62,7 @@
     let 
       dotfiles = pkgs.callPackage ../../derivations/dotfiles.nix {inherit pkgs;};
       wmutils = pkgs.callPackage ../../derivations/wmutils.nix {inherit pkgs;};
+      decay-gtk-theme = pkgs.callPackage ../../derivations/decay-gtk-theme.nix {inherit pkgs;};
     in [
      gcc
      ripgrep
@@ -85,6 +86,8 @@
      ueberzug
      rofi
      pamixer
+     discord
+     #decay-gtk-theme
      #dotfiles
   ];
 
