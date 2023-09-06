@@ -105,6 +105,7 @@
   in [
     iosevka
     jetbrains-mono
+    fredoka
     (nerdfonts.override {fonts = ["JetBrainsMono" "Iosevka"];})
   ];
 }
