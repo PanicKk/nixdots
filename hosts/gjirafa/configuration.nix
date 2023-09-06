@@ -64,7 +64,8 @@
   # programs.seahorse.enable = false;
   programs.ssh.askPassword = "";
   
-  environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; 
+  [
     dialog
     touchegg
     gnome-extension-manager
@@ -93,6 +94,7 @@
     discord
     notion-app-enhanced
     obs-studio
+    # fredoka
     #sassc
   ];
   
@@ -103,7 +105,6 @@
   in [
     iosevka
     jetbrains-mono
-    fredoka
     (nerdfonts.override {fonts = ["JetBrainsMono" "Iosevka"];})
   ];
 }
