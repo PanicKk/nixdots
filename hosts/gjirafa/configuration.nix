@@ -20,11 +20,10 @@
         gdm.enable = true;
         gdm.wayland = false;
         defaultSession = "gnome";
-        # sessionCommands = ''
-        #   xrandr --output DP-4 --primary --mode 2560x1600 --scale 0.75x0.75 --rotate normal
-        # '';
         sessionCommands = ''
-          xrandr --output DP-4 --primary --mode 2560x1600 --scale 0.85x0.85 --dpi 127 --rotate normal
+          xrandr --output DP-4 --auto --primary --mode 2560x1600 --rate 165.02 --scale 0.75x0.75 --rotate normal --right-of DP-2
+          xrandr --output DP-2 --auto --mode 1920x1080 --rate 60 --scale 1x1 --rotate normal
+          xrandr --output HDMI-0 --auto --mode 1920x1080 --rate 60 --scale 1x1 --rotate normal --left-of DP-2
         '';
       };
       desktopManager.gnome = {
@@ -40,6 +39,9 @@
           middleEmulation = true;
         };
       };
+    };
+    gnome = {
+      gnome-browser-connector.enable = true;
     };
   };
 
@@ -61,7 +63,6 @@
     };
   };
   
-  # programs.seahorse.enable = false;
   programs.ssh.askPassword = "";
   
   environment.systemPackages = with pkgs; 
@@ -92,7 +93,6 @@
     lens
     postman
     discord
-    notion-app-enhanced
     obs-studio
     # fredoka
     #sassc

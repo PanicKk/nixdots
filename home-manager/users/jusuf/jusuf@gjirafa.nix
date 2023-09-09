@@ -2,6 +2,9 @@
   imports = [
     ./programs/git.nix
     ./programs/xresources.nix
+    ./programs/vscode.nix
+    ./programs/firefox.nix   
+    # ./programs/autorandr.nix
   ]; 
 
   home.username = "jusuf";
@@ -26,11 +29,5 @@
       font-name = "Fredoka 11";
       monospace-font-name = "JetBrainsMono Nerd Font Mono Medium 11";
     };
-    # "org/gnome/mutter" = {
-    #   experimental-features = [ 
-    #     "scale-monitor-framebuffer" 
-    #     "x11-randr-fractional-scaling"
-    #   ];
-    # };
   };
 }

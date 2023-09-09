@@ -13,7 +13,7 @@
     git
     neovim
     feh
-    firefox
+    # firefox
     bitwarden
   ];
 }

@@ -11,7 +11,7 @@
         device = "nodev";
         efiSupport = true;
         useOSProber = true;
-        gfxmodeEfi = "1920x1080";
+        gfxmodeEfi = "860x480";
       };
     };
   };
@@ -31,6 +31,7 @@
   };
 
   networking = {
+    firewall.enable = false;
     networkmanager = {
       enable = true;
     };
