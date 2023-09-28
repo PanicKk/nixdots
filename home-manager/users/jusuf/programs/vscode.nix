@@ -105,9 +105,9 @@
       }
       {
         name = "python";
-        version = "2023.17.12491008";
+        version = "2023.8.0";
         publisher = "ms-python";
-        sha256 = "y18ofHuYuPjZC351KHTo6xI8xkbkL0LYGO2AMFayCfg=";
+        sha256 = "7DgOYn25qcNp/uc5v6yKSyWU7Ln06ZhXY0hL2vqKn3I=";
       }
       {
         name = "vsc-python-indent";
@@ -117,20 +117,20 @@
       }
     ];
     userSettings = {
-      workBench = {
-        colorTheme = "'Default Light Modern'";
-        iconTheme = "material-icon-theme";
-      };
+      workbench.colorTheme = "Default Light Modern";
+      workbench.iconTheme = "material-icon-theme";
       editor = {
-        fontFamily = "'JetBrainsMono Nerd Front Mono'";
+        fontFamily = "'JetBrains Mono'";
         fontSize = 14;
         fontLigatures = true;
         smoothScrolling = true;
         tabSize = 2;
         bracketPairColorization.enabled = true;
         files.autoSave = "afterDelay";
+        minimap.renderCharacters = false;
       };
       terminal.integrated.fontSize = 14;
+      terminal.integrated.fontFamily = "'JetBrainsMono Nerd Font Mono'";
     };
   };
 }

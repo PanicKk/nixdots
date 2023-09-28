@@ -76,7 +76,7 @@
     gnomeExtensions.x11-gestures
     gnome.gnome-tweaks
     gnome.dconf-editor
-    whitesur-gtk-theme
+    # whitesur-gtk-theme
     whitesur-icon-theme
     orchis-theme
     papirus-icon-theme
@@ -94,6 +94,12 @@
     postman
     discord
     obs-studio
+    python310
+    python310Packages.pip
+    python310Packages.requests
+    ffmpeg_6-full
+    gpac
+    remmina
     # fredoka
     #sassc
   ];

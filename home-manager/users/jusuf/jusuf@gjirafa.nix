@@ -23,7 +23,7 @@
   dconf.settings = {
     "org/gnome/desktop/wm/preferences" = {
       button-layout = "appmenu:minimize,maximize,close";
-      titlebar-font = "Fredoka Bold 11";
+      titlebar-font = "Fredoka Medium 11";
     };
     "org/gnome/desktop/interface" = {
       font-name = "Fredoka 11";
