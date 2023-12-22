@@ -3,6 +3,7 @@
     mlocate
     gcc
     cmake
+    gnumake
     gzip
     unzip
     wget
@@ -13,7 +14,6 @@
     git
     neovim
     feh
-    # firefox
     bitwarden
   ];
 }

@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
     repo = name;
     owner = "rafaelmardojai";
     rev = "v117";
-    sha256 = "SnSXskFvJP1OMFuDdhuxxbFpQKzSz3YLJyoxWscmDSA=";
+    sha256 = "ulG+9TcjI27RQF/5t7i+ED38gLuK5jbXNJHBxs4QBV0=";
   };
 
   dontConfigure = true;
